@@ -24,7 +24,7 @@
 > 7. ```gem 'async-websocket', '~> 0.8.0'```
 > 8. ```gem 'rack'```
 > 9. ```gem 'rss'```
-
+6. run ```bundle install``` to install all the gems.
 >## Clone
 
 ```git
