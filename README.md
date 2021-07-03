@@ -20,7 +20,12 @@
 > 3. `gem 'wolfram'`
 > 4. `gem 'http'`
 > 5. `gem 'screencap'`
-> ## Clone
+> 6. `gem 'imgur2'`
+> 7. `gem 'async-websocket', '~> 0.8.0'`
+> 8. `gem 'rack'`
+> 9. `gem 'rss'`
+
+>## Clone
 
 ```git
 git clone https://github.com/tongoonamujera/Slack_bot_ruby.git
