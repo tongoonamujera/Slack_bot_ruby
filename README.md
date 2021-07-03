@@ -1,25 +1,24 @@
 # Ruby object Oriented Programming
 
-> In this project, we were requested  build a Tic Tac Toe game. The main goal is to put into practice the main concepts of Object Oriented Programming. Particularly, classes and access to their attributes. In the This milestone we were only requested to create two folders that are lib( for the game logic) and bin(with the [executable file]called “main.rb”)
-### TIC TAC TOE GAME INSTRUCTIONS
-- Tic Tac Toe is board game played on a board with a 3 squared by 3 squared grid.
-- The players are assigned their own symbols to place on the board cells
-- Player 1 will be assigned the O symbol.
-- Player 2 will be assigned the X symbol.
-- Players take turn to place their symbols on the board.
-- The grid is numbered from 1 to 9.
-- ![Screenshot from 2021-06-22 08-56-55](https://user-images.githubusercontent.com/69446259/122899324-05032700-d34c-11eb-944e-9125e812768a.png)
-- You place the symbol by choosing the cell number.
-- The First Player to get 3 of her symbols in a row (up, down, across, or diagonally) wins the game.
-- When all 9 squares are full, the game is over. If no player has 3 marks in a row, the game ends in a tie.
-
+> In this particular project, i have decided to build a bot based in Ruby. The main theme of this project is to apply best ruby coding practice.
 ## Built With
 
 - Ruby
 
 ## Getting Started
-
-Clone
+> make sure you have Ruby installed locally
+> make sure you have a code edditor.
+> ## Starting the project from scratch 
+> if you are about to start the project from scratch you need to do a few following steps.
+1. First navigate to your Terminal in your machine and type `mkdir` followed by the name you want your project to be.
+2. Then navigate to that directory by typing `cd` followed by the name you have given the project previously.
+3. Type `bundle init` on your Terminal to create a Gemfile.
+4. Type `code .`if you are using Visual Studio Code or `subl .` if you are using Sublime  or `atom .` if you are using Atom(this is done to open your project in the code edditor)
+5. You need to add the following gems to the Gemfile
+> `gem 'slack-ruby-bot'`
+> `gem 'dotenv'`
+> `gem 'wolfram'`
+> ## Clone
 
 ```git
 git clone https://github.com/tongoonamujera/Slack_bot_ruby.git
