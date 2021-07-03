@@ -15,9 +15,9 @@
 3. Type `bundle init` on your Terminal to create a Gemfile.
 4. Type `code .`if you are using Visual Studio Code or `subl .` if you are using Sublime  or `atom .` if you are using Atom(this is done to open your project in the code edditor)
 5. You need to add the following gems to the Gemfile
-> `gem 'slack-ruby-bot'`
-> `gem 'dotenv'`
-> `gem 'wolfram'`
+> 1. `gem 'slack-ruby-bot'`
+> 2. `gem 'dotenv'`
+> 3. `gem 'wolfram'`
 > ## Clone
 
 ```git
