@@ -9,7 +9,9 @@ require 'json'
 require 'mechanize'
 require 'screencap'
 require 'imgur2'
+require 'rss'
+require 'open-uri'
 
-require_relative '../lib/rubybot.rb'
+require_relative '../lib/commands.rb'
 
 RubyBot::App.instance.run 

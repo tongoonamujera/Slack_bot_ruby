@@ -88,6 +88,9 @@ GEM
     racc (1.5.2)
     rack (2.2.3)
     rake (13.0.3)
+    rexml (3.2.5)
+    rss (0.2.9)
+      rexml
     ruby2_keywords (0.0.4)
     rubyntlm (0.6.3)
     screencap (0.1.4)
@@ -127,6 +130,7 @@ DEPENDENCIES
   imgur2
   mechanize
   rack
+  rss
   screencap
   slack-ruby-bot
   wolfram

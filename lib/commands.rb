@@ -1,10 +1,17 @@
 module RubyBot
+  require_relative './class_methods.rb'
   class App < SlackRubyBot::App
   end
 
-  class Hiiii < SlackRubyBot::Commands::Base
+  class Hi < SlackRubyBot::Commands::Base
     command 'hi' do |client, data, _match|
-      client.message text: 'hi how are you?', channel: data.channel
+      client.say(channel: data.channel, text: HelloText.say_hello)
+    end
+  end
+
+  class Pass_greeting < SlackRubyBot::Commands::Base
+    command 'greet' do |client, data, _match|
+      client.say(channel: data.channel, text: Greetings.greet)
     end
   end
 
@@ -44,7 +51,7 @@ module RubyBot
         image_url = url["upload"]["links"]["original"]
         client.message text: image_url, channel: data.channel
       else
-        client.message text: _match[:expression] + "isn't a URL, yo", channel: data.channel
+        client.message text: _match[:expression] + " " + "isn't a URL", channel: data.channel
 
       end
     end
@@ -88,6 +95,14 @@ module RubyBot
           channel: data.channel
       end
 
+    end
+  end
+
+  class GetEpisode < SlackRubyBot::Commands::Base
+    command 'get_latest_episode' do |client, data, _match|
+      url = 'https://www.driftingruby.com/episodes/feed.rss'
+      rss = RSS::Parser.parse(open(url).read, false).items.first
+      client.say(channel: data.channel, text: rss.link)
     end
   end
 end
