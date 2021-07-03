@@ -1,10 +1,11 @@
-# frozen_string_literal: true
+source 'http://rubygems.org'
 
-source "https://rubygems.org"
-
-git_source(:github) {|repo_name| "https://github.com/#{repo_name}" }
-
-gem 'celluloid-io', '~> 0.17.3'
-gem 'dotenv', '~> 2.7', '>= 2.7.6'
-gem 'slack-ruby-bot', '~> 0.16.1'
-gem 'puma', '~> 5.3', '>= 5.3.2'
+gem 'slack-ruby-bot'
+gem 'dotenv'
+gem 'wolfram'
+gem 'http'
+gem 'mechanize'
+gem 'screencap'
+gem 'imgur2'
+gem 'async-websocket', '~> 0.8.0'
+gem 'rack'
