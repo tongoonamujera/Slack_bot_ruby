@@ -18,6 +18,8 @@
 > 1. `gem 'slack-ruby-bot'`
 > 2. `gem 'dotenv'`
 > 3. `gem 'wolfram'`
+> 4. `gem 'http'`
+> 5. `gem 'screencap'`
 > ## Clone
 
 ```git
