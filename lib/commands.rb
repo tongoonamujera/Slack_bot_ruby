@@ -57,14 +57,10 @@ module RubyBot
     end
   end
 
-  class Insults < SlackRubyBot::Commands::Base
+  class Insulting < SlackRubyBot::Commands::Base
 
     command 'insult' do |client, data, _match|
-
-      result = JSON.parse Http.get('http://quandyfactory.com/insult/json').body
-      insult = result['insult']
-      client.message text: "Hey #{_match[:expression]}, #{insult}", channel: data.channel
-
+      client.say(channel: data.channel, text: Insults.insult)
     end
 
   end
