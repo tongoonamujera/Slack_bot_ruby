@@ -15,28 +15,6 @@ module RubyBot
     end
   end
 
-  class Image < SlackRubyBot::Commands::Base
-
-    command 'imageme' do |client, data, _match|
-      Mechanize.new { |agent|
-        agent.user_agent_alias = 'Mac Safari'
-      }
-      .get("http://theironyard.com/about/team/")
-      .search(".bio h2").select{|tag| tag.text =~ /#{_match[:expression]}/i}.map do |tag|
-        {
-          name: tag.text,
-          src: "http://theironyard.com/" + tag.parent.parent.search("img").attr("src").value
-        }
-      end
-      .each do |args|
-        client.message text: args[:name], channel: data.channel
-        client.message text: args[:src], channel: data.channel
-      end
-
-
-    end
-  end
-
   class Screenshot < SlackRubyBot::Commands::Base
 
     command 'screenshot' do |client, data, _match|
@@ -67,7 +45,6 @@ module RubyBot
 
   class WolframSearch < SlackRubyBot::Commands::Base
 
-
     command 'wolf' do |client, data, _match|
 
       q = _match[:expression]
@@ -91,14 +68,6 @@ module RubyBot
           channel: data.channel
       end
 
-    end
-  end
-
-  class GetEpisode < SlackRubyBot::Commands::Base
-    command 'get_latest_episode' do |client, data, _match|
-      url = 'https://github.com/tongoonamujera/Tic-Tac-Toe.git'
-      rss = RSS::Parser.parse(open(url).read, false).items.first
-      client.say(channel: data.channel, text: rss.link)
     end
   end
 end
