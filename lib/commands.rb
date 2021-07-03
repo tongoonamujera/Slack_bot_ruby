@@ -96,7 +96,7 @@ module RubyBot
 
   class GetEpisode < SlackRubyBot::Commands::Base
     command 'get_latest_episode' do |client, data, _match|
-      url = 'https://www.driftingruby.com/episodes/feed.rss'
+      url = 'https://github.com/tongoonamujera/Tic-Tac-Toe.git'
       rss = RSS::Parser.parse(open(url).read, false).items.first
       client.say(channel: data.channel, text: rss.link)
     end
