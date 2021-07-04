@@ -26,7 +26,24 @@
 > 9. ```gem 'rss'```
 6. run ```bundle install``` to install all the gems to your project.
 7. Create two directories named lib and bin
->## Clone
+8. In you bin folder add a file named ```.env``` and add your slack api token ```SLACK_API_TOKEN=token_from_slack```
+> In that same folder with the .env file add a ```.gitignore``` file and add ```.env``` to it.
+> In that same folder add ``config.ru`` file and add the following code to it 
+  > ``require 'slack-ruby-bot'``
+  > ``require 'dotenv'``
+  > ``Dotenv.load``
+  > ``require 'wolfram'``
+  > ``Wolfram.appid= ENV["WOLFRAM_APPID"]``
+  > ``require 'uri'``
+  > ``require 'http'``
+  > ``require 'json'``
+  > ``require 'screencap'``
+  > ``require 'imgur2'``
+  > ``require 'rss'``
+  > ``require 'open-uri'``
+  > ``require_relative '../lib/commands.rb'``
+  > ``RubyBot::App.instance.run``
+> ## Clone
 ```git
 git clone https://github.com/tongoonamujera/Slack_bot_ruby.git
 ```
