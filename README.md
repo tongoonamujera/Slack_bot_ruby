@@ -1,4 +1,4 @@
-# Ruby object Oriented Programming
+# Ruby Slack Bot
 
 > In this particular project, i have decided to build a bot based in Ruby. The main theme of this project is to apply best ruby coding practice.
 ## Built With
@@ -108,7 +108,63 @@
         end
       end
       ```
+      - 2. `greetings.rb` **which contains the following code**
+        ```ruby
+        class HelloText
 
+          def self.say_hello
+            "Hello! This is a Bot!"
+          end
+        end
+
+        class Greetings
+          def self.greet
+            'hello user, how can i help you toady, I\'m you daily friend!'
+          end
+        end
+        ```
+      - 3. `inspirations.rb` **Which contains the following code**
+      ```ruby
+      class Inspiration
+        def self.inspire
+          inspiration_quotes = [
+            'Experience is the name everyone gives to their mistakes.',
+            'When to use iterative development? You should use iterative development only on projects that you want to succeed.',
+            'Code is like humor. When you have to explain it, it’s bad.',
+            'Fix the cause, not the symptom.',
+            'Make it work, make it right, make it fast.',
+            'Simplicity is the soul of efficiency.',
+            'Sometimes it pays to stay in bed on Monday, rather than spending the rest of the week debugging Monday’s code.',
+            'Write it. Shoot it. Publish it. Crochet it, sauté it, whatever. MAKE.'
+          ]
+
+          arr = inspiration_quotes.shuffle.first.to_s
+          return arr
+        end
+      end
+      ```
+      - 4. `insults.rb` **which contains the following code**
+      ```ruby
+      class Insults
+        def self.insult
+          insults = [
+            'My battery lasts longer than your relationships.',
+            'I’m surprised at your level of stupidity.',
+            'Life is good, you should get one.',
+            'Please don’t interupt me when I’m ignoring you.',
+            'You are known as an idiot savant, minus the savant.',
+            'I never insult any people I only tell them what they are.',
+            'Did you forget your brain in your mother’s womb? Cause I’m pretty sure you did.',
+            'The degree of your stupidity is enough to boil water.',
+            'Of course I talk like an idiot. How else could you understand me?',
+            'I respect those, who hate me by showing my middle finger.',
+            'If you look up the definition of moron in the dictionary there will be a picture of you.'
+          ]
+          arr = insults.shuffle.first.to_s
+          return arr
+        end
+      end
+      ```
   ## Clone
   ```git
    git clone https://github.com/tongoonamujera/Slack_bot_ruby.git
