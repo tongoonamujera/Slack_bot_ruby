@@ -2,7 +2,7 @@ source 'http://rubygems.org'
 
 gem 'slack-ruby-bot'
 gem 'dotenv'
-gem 'wolfram'
+gem 'wolfram', '~> 0.2.1'
 gem 'http'
 # gem 'mechanize'
 gem 'screencap'

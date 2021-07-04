@@ -1,14 +1,3 @@
-class HelloText
-  def self.say_hello
-    'Hello! This is a Bot!'
-  end
-end
-
-class Greetings
-  def self.greet
-    'hello user, how can i help you toady, I\'m you daily friend!'
-  end
-end
 class Insults
   def self.insult
     insults = [
@@ -24,7 +13,6 @@ class Insults
       'I respect those, who hate me by showing my middle finger.',
       'If you look up the definition of moron in the dictionary there will be a picture of you.'
     ]
-
     arr = insults.shuffle.first.to_s
     return arr
   end
