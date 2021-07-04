@@ -107,12 +107,12 @@
       end
       ```
 
->## Clone
-```git
-git clone https://github.com/tongoonamujera/Slack_bot_ruby.git
-```
+  ## Clone
+    ```git
+    git clone https://github.com/tongoonamujera/Slack_bot_ruby.git
+    ```
 
-To get a local copy up and running, follow these simple example steps.
+   - To get a local copy up and running, follow these simple example steps.
 
 
 1. Open a terminal window and enter `git clone https://github.com/tongoonamujera/Slack_bot_ruby.git`
