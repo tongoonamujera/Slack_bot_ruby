@@ -9,7 +9,7 @@
 > make sure you have Ruby installed locally
 > make sure you have a code edditor.
  - ## Starting the project from scratch 
-> > ## if you are about to start the project from scratch you need to do a few following steps.
+   - ## if you are about to start the project from scratch you need to do a few following steps.
 > > 1. First navigate to your Terminal in your machine and type ```mkdir``` followed by the name you want your project to be.
 > > 2. Then navigate to that directory by typing ```cd``` followed by the name you have given the project previously.
 > > 3. Type ```bundle init``` on your Terminal to create a Gemfile.
