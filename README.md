@@ -49,7 +49,7 @@
 
        RubyBot::App.instance.run
        ```
-    ###### 9. in the lib folder create the following files
+    9. ###### in the lib folder create the following files
       - 1. `commands.rb` **which contains the follwing code**
       ```ruby
       module RubyBot
