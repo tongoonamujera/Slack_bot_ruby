@@ -39,7 +39,7 @@
 >>> > ``require 'json'`` <br>
 >>> > ``require 'screencap'`` <br>
 >>> > ``require 'imgur2'`` <br>
->>> > ``require 'rss'``
+>>> > ``require 'rss'`` <br>
 >>> > ``require 'open-uri'`` <br>
 >>> > ``require_relative '../lib/commands.rb'`` <br>
 >>> > ``RubyBot::App.instance.run`` <br>
