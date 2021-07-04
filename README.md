@@ -16,34 +16,34 @@
 > > 4. Type ```code .``` if you are using Visual Studio Code or ```subl .``` if you are using Sublime  or ```atom .``` if you are using Atom(this is done to open your project in the code edditor)
 > > 5. ## You need to add the following gems to the Gemfile
 >>> 1. ```gem 'slack-ruby-bot'```
-> 2. ```gem 'dotenv'```
-> 3. ```gem 'wolfram'```
-> 4. ```gem 'http'```
-> 5. ```gem 'screencap'```
-> 6. ```gem 'imgur2'```
-> 7. ```gem 'async-websocket', '~> 0.8.0'```
-> 8. ```gem 'rack'```
-> 9. ```gem 'rss'```
-6. run ```bundle install``` to install all the gems to your project.
-7. Create two directories named lib and bin
-8. In you bin folder add a file named ```.env``` and add your slack api token ```SLACK_API_TOKEN=token_from_slack```
-> In that same folder with the .env file add a ```.gitignore``` file and add ```.env``` to it. <br>
-> In that same folder add ``config.ru`` file and add the following code to it. <br>
-> > ``require 'slack-ruby-bot'`` <br>
-> > ``require 'dotenv'`` <br>
-> > ``Dotenv.load`` <br>
-> > ``require 'wolfram'`` <br>
-> > ``Wolfram.appid= ENV["WOLFRAM_APPID"]`` <br>
-> > ``require 'uri'`` <br>
-> > ``require 'http'`` <br>
-> > ``require 'json'`` <br>
-> > ``require 'screencap'`` <br>
-> > ``require 'imgur2'`` <br>
-> > ``require 'rss'``
-> > ``require 'open-uri'`` <br>
-> > ``require_relative '../lib/commands.rb'`` <br>
-> > ``RubyBot::App.instance.run`` <br>
-## Clone
+>>> 2. ```gem 'dotenv'```
+>>> 3. ```gem 'wolfram'```
+>>> 4. ```gem 'http'```
+>>> 5. ```gem 'screencap'```
+>>> 6. ```gem 'imgur2'```
+>>> 7. ```gem 'async-websocket', '~> 0.8.0'```
+>>> 8. ```gem 'rack'```
+>>> 9. ```gem 'rss'```
+>> 6. run ```bundle install``` to install all the gems to your project.
+>> 7. Create two directories named lib and bin
+>> 8. In you bin folder add a file named ```.env``` and add your slack api token ```SLACK_API_TOKEN=token_from_slack```
+>>> In that same folder with the .env file add a ```.gitignore``` file and add ```.env``` to it. <br>
+>>> In that same folder add ``config.ru`` file and add the following code to it. <br>
+>>> > ``require 'slack-ruby-bot'`` <br>
+>>> > ``require 'dotenv'`` <br>
+>>> > ``Dotenv.load`` <br>
+>>> > ``require 'wolfram'`` <br>
+>>> > ``Wolfram.appid= ENV["WOLFRAM_APPID"]`` <br>
+>>> > ``require 'uri'`` <br>
+>>> > ``require 'http'`` <br>
+>>> > ``require 'json'`` <br>
+>>> > ``require 'screencap'`` <br>
+>>> > ``require 'imgur2'`` <br>
+>>> > ``require 'rss'``
+>>> > ``require 'open-uri'`` <br>
+>>> > ``require_relative '../lib/commands.rb'`` <br>
+>>> > ``RubyBot::App.instance.run`` <br>
+>## Clone
 ```git
 git clone https://github.com/tongoonamujera/Slack_bot_ruby.git
 ```
