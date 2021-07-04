@@ -26,25 +26,27 @@
      gem 'rack'
      gem 'rss'
      ```
->> 6. run ```bundle install``` to install all the gems to your project.
->> 7. Create two directories named lib and bin
->> 8. In you bin folder add a file named ```.env``` and add your slack api token ```SLACK_API_TOKEN=your_token_from_slack```
->>> In that same folder with the .env file add a ```.gitignore``` file and add ```.env``` to it. <br>
->>> In that same folder add ``config.ru`` file and add the following code to it. <br>
->>> > ``require 'slack-ruby-bot'`` <br>
->>> > ``require 'dotenv'`` <br>
->>> > ``Dotenv.load`` <br>
->>> > ``require 'wolfram'`` <br>
->>> > ``Wolfram.appid= ENV["WOLFRAM_APPID"]`` <br>
->>> > ``require 'uri'`` <br>
->>> > ``require 'http'`` <br>
->>> > ``require 'json'`` <br>
->>> > ``require 'screencap'`` <br>
->>> > ``require 'imgur2'`` <br>
->>> > ``require 'rss'`` <br>
->>> > ``require 'open-uri'`` <br>
->>> > ``require_relative '../lib/commands.rb'`` <br>
->>> > ``RubyBot::App.instance.run`` <br>
+    6. run ```bundle install``` to install all the gems to your project.
+    7. Create two directories named lib and bin
+    8. In you bin folder add a file named ```.env``` and add your slack api token ```SLACK_API_TOKEN=your_token_from_slack```
+     - In that same folder with the .env file add a ```.gitignore``` file and add ```.env``` to it. <br>
+     - In that same folder add ``config.ru`` file and add the following code to it. <br>
+       ```ruby
+       require 'slack-ruby-bot'
+       require 'dotenv'
+       Dotenv.load
+       require 'uri'
+       require 'http'
+       require 'json'
+       require 'screencap'
+       require 'imgur2'
+       require 'rss'
+       require 'open-uri'
+
+       require_relative '../lib/commands.rb'
+
+       RubyBot::App.instance.run
+       ```
 
 >>###### 9. in the lib folder create the following files
 >>>1. `commands.rb` which contains the follwing code <br>
