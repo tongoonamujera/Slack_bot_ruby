@@ -46,7 +46,7 @@
 
 >>###### 9. in the lib folder create the following files
 >>>1. `commands.rb` which contains the follwing code <br>
-```
+>>>```
 module RubyBot
   require_relative './greetings.rb'
   require_relative './inspirations.rb'
