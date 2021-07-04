@@ -44,8 +44,7 @@
 >>> > ``require_relative '../lib/commands.rb'`` <br>
 >>> > ``RubyBot::App.instance.run`` <br>
 >## Clone
-
->> ```git
+```git
 git clone https://github.com/tongoonamujera/Slack_bot_ruby.git
 ```
 
