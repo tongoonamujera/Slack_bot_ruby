@@ -15,15 +15,17 @@
     3. Type ```bundle init``` on your Terminal to create a Gemfile.
     4. Type ```code .``` if you are using Visual Studio Code or ```subl .``` if you are using Sublime  or ```atom .``` if you are using Atom(this is done to open your project in the code edditor)
     5. ###### You need to add the following gems to the Gemfile
->>> 1. ```gem 'slack-ruby-bot'```
->>> 2. ```gem 'dotenv'```
->>> 3. ```gem 'wolfram'```
->>> 4. ```gem 'http'```
->>> 5. ```gem 'screencap'```
->>> 6. ```gem 'imgur2'```
->>> 7. ```gem 'async-websocket', '~> 0.8.0'```
->>> 8. ```gem 'rack'```
->>> 9. ```gem 'rss'```
+     - ```ruby
+     gem 'slack-ruby-bot'
+     gem 'dotenv'
+     gem 'wolfram', '~> 0.2.1'
+     gem 'http'
+     gem 'screencap'
+     gem 'imgur2'
+     gem 'async-websocket', '~> 0.8.0'
+     gem 'rack'
+     gem 'rss'
+     ```
 >> 6. run ```bundle install``` to install all the gems to your project.
 >> 7. Create two directories named lib and bin
 >> 8. In you bin folder add a file named ```.env``` and add your slack api token ```SLACK_API_TOKEN=your_token_from_slack```
