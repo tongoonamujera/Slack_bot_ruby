@@ -25,8 +25,8 @@
 > 8. ```gem 'rack'```
 > 9. ```gem 'rss'```
 6. run ```bundle install``` to install all the gems to your project.
+7. Create two directories named lib and bin
 >## Clone
-
 ```git
 git clone https://github.com/tongoonamujera/Slack_bot_ruby.git
 ```
