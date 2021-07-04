@@ -50,7 +50,7 @@
        RubyBot::App.instance.run
        ```
     ###### 9. in the lib folder create the following files
-      - 1. `commands.rb` which contains the follwing code <br>
+      - 1. `commands.rb` **which contains the follwing code**
       ```ruby
       module RubyBot
         require_relative './greetings.rb'
