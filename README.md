@@ -6,8 +6,10 @@
 - Ruby
 
 ## Getting Started
-> make sure you have Ruby installed locally
-> make sure you have a code edditor.
+
+>>### Prerequisites
+>>> make sure you have Ruby installed locally
+>>> make sure you have a code edditor.
  - ## Starting the project from scratch 
    - ## if you are about to start the project from scratch you need to do a few following steps.
     1. First navigate to your Terminal in your machine and type ```mkdir``` followed by the name you want your project to be.
@@ -113,15 +115,9 @@
    ```
 
    - To get a local copy up and running, follow these simple example steps.
-
-
-1. Open a terminal window and enter `git clone https://github.com/tongoonamujera/Slack_bot_ruby.git`
-2. Make your new cloned directory your active directory
-3. Currently, you are in the "development branch."
-
-### Prerequisites
-
-Ruby installed localy
+    - 1. Open a terminal window and enter `git clone https://github.com/tongoonamujera/Slack_bot_ruby.git`
+    - 2. Make your new cloned directory your active directory
+    - 3. Currently, you are in the "development branch."
 
 ### Usage
 
