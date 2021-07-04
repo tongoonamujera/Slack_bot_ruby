@@ -27,8 +27,8 @@
 6. run ```bundle install``` to install all the gems to your project.
 7. Create two directories named lib and bin
 8. In you bin folder add a file named ```.env``` and add your slack api token ```SLACK_API_TOKEN=token_from_slack```
-> In that same folder with the .env file add a ```.gitignore``` file and add ```.env``` to it.
-> In that same folder add ``config.ru`` file and add the following code to it 
+> In that same folder with the .env file add a ```.gitignore``` file and add ```.env``` to it. <br>
+> In that same folder add ``config.ru`` file and add the following code to it. <br>
   > ``require 'slack-ruby-bot'`` <br>
   > ``require 'dotenv'`` <br>
   > ``Dotenv.load`` <br>
