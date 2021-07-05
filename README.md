@@ -7,9 +7,9 @@
 
 ## Getting Started
 
->>### Prerequisites
->>> make sure you have Ruby installed locally
->>> make sure you have a code edditor.
+ - ### Prerequisites 
+  - make sure you have Ruby installed locally
+  - make sure you have a code edditor.
    - make sure you have a slack workspace if not [create a new slack workspace here](https://slack.com/help/articles/206845317-Create-a-Slack-workspace)
  - ## Starting the project from scratch 
    - ## if you are about to start the project from scratch you need to do a few following steps.
