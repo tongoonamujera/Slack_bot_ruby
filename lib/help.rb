@@ -2,7 +2,7 @@
 class Bot < SlackRubyBot::Bot
   help do
     title 'FunBot ruby'
-    desc 'This bot is about Funbot.'
+    desc 'welcome to help desc, see how to use funbot'
 
     command :get_latest_episode do
       title 'insult'
