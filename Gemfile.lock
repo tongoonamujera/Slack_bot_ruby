@@ -21,6 +21,7 @@ GEM
     concurrent-ruby (1.1.9)
     console (1.13.1)
       fiber-local
+    diff-lcs (1.4.4)
     domain_name (0.5.20190701)
       unf (>= 0.0.5, < 1.0.0)
     dotenv (2.7.6)
@@ -71,6 +72,19 @@ GEM
     rack (2.2.3)
     rake (13.0.3)
     rexml (3.2.5)
+    rspec (3.10.0)
+      rspec-core (~> 3.10.0)
+      rspec-expectations (~> 3.10.0)
+      rspec-mocks (~> 3.10.0)
+    rspec-core (3.10.1)
+      rspec-support (~> 3.10.0)
+    rspec-expectations (3.10.1)
+      diff-lcs (>= 1.2.0, < 2.0)
+      rspec-support (~> 3.10.0)
+    rspec-mocks (3.10.2)
+      diff-lcs (>= 1.2.0, < 2.0)
+      rspec-support (~> 3.10.0)
+    rspec-support (3.10.2)
     rss (0.2.9)
       rexml
     ruby2_keywords (0.0.4)
@@ -104,10 +118,12 @@ PLATFORMS
 
 DEPENDENCIES
   async-websocket (~> 0.8.0)
+  bundler
   dotenv
   http
   imgur2
   rack
+  rspec
   rss
   screencap
   slack-ruby-bot
