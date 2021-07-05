@@ -179,7 +179,9 @@
 ### Usage
  - Create a new slack bot ([you can use this link to create a slack bot](https://slack.com/services/new/bot))
  - You can choose a name of your choice and then click the green button (Add Bot Intergration)
-
+ - You can be redirected to a new page remember to copy your SLACK_API_TOKEN and paste it to your `.env` file.
+ - Now you can click the green button to Save Bot Intergration
+ - Navigate to your slack workspace and invite your_bot to any channel of your choice
 ## Authors
 👤 **Tongoona Mujera**
 
