@@ -2,6 +2,7 @@ module RubyBot
   require_relative './greetings.rb'
   require_relative './inspirations.rb'
   require_relative './insults.rb'
+  require_relative './help.rb'
   class App < SlackRubyBot::App
   end
 
