@@ -182,6 +182,7 @@
  - You can be redirected to a new page remember to copy your SLACK_API_TOKEN and paste it to your `.env` file.
  - Now you can click the green button to Save Bot Intergration
  - Navigate to your slack workspace and invite your_bot to any channel of your choice
+ - - to test your code
 ## Authors
 👤 **Tongoona Mujera**
 
