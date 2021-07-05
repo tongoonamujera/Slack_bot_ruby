@@ -177,8 +177,8 @@
     - 3. Currently, you are in the "development branch."
 
 ### Usage
-
-Use IRB to test the code
+ - Create a new slack bot [you can use this link to create a slack bot](https://slack.com/services/new/bot)
+ - You can choose a name of your choice and then click the green button (Add Bot Intergration)
 
 ## Authors
 👤 **Tongoona Mujera**
