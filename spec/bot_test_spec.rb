@@ -52,4 +52,9 @@ describe '#self.inspire' do
     arr << inspiration_quotes.shuffle.first
     expect(arr.all?(Integer)).to eq(false)
   end
+
+  it 'it returns false upon check  for an float' do
+    arr << inspiration_quotes.shuffle.first
+    expect(arr.all?(Float)).to eq(false)
+  end
 end
