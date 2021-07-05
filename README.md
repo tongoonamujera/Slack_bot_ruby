@@ -182,7 +182,9 @@
  - You can be redirected to a new page remember to copy your SLACK_API_TOKEN and paste it to your `.env` file.
  - Now you can click the green button to Save Bot Intergration
  - Navigate to your slack workspace and invite your_bot to any channel of your choice
- - - to test your code
+ - To test your code make sure you are i the directory containing `config.ru` file
+ - To intergrate your local server with slack just run `bundle exec rackup` in your Terminal
+ - navigate to your slack workspace to the channel you have added your bot `@name_of_your_bot` followed by the command `help` to get list of commands you can enter
 ## Authors
 👤 **Tongoona Mujera**
 
