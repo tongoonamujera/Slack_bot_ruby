@@ -184,7 +184,7 @@
  - Navigate to your slack workspace and invite your_bot to any channel of your choice
  - To test your code make sure you are i the directory containing `config.ru` file
  - To intergrate your local server with slack just run `bundle exec rackup` in your Terminal
- - navigate to your slack workspace to the channel you have added your bot `@name_of_your_bot` followed by the command `help` to get list of commands you can enter
+ - navigate to your slack workspace to the channel you have added your bot `@name_of_your_bot` followed by the command `help` to get list of commands you can enter to interact with your bot
 ## Authors
 👤 **Tongoona Mujera**
 
