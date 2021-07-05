@@ -8,9 +8,9 @@
 ## Getting Started
 
  - ### Prerequisites 
-  - make sure you have Ruby installed locally
-  - make sure you have a code edditor.
-   - make sure you have a slack workspace if not [create a new slack workspace here](https://slack.com/help/articles/206845317-Create-a-Slack-workspace)
+    - make sure you have Ruby installed locally
+    - make sure you have a code edditor.
+    - make sure you have a slack workspace if not [create a new slack workspace here](https://slack.com/help/articles/206845317-Create-a-Slack-workspace)
  - ## Starting the project from scratch 
    - ## if you are about to start the project from scratch you need to do a few following steps.
     1. First navigate to your Terminal in your machine and type ```mkdir``` followed by the name you want your project to be.
