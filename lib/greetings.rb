@@ -25,8 +25,3 @@ class Greetings
     end
   end
 end
-
-xdv = []
-greets = Greetings.new(xdv)
-
-puts greets.greet(xdv)
