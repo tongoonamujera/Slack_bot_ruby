@@ -23,4 +23,8 @@ module Quotes
     'I respect those, who hate me by showing my middle finger.',
     'If you look up the definition of moron in the dictionary there will be a picture of you.'
   ]
+
+  $greeting_quotes = ['good morning user!, how can i help you?',
+    'good evening user, how can i help you'
+  ]
 end

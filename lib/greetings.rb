@@ -6,8 +6,27 @@ class HelloText
 end
 
 class Greetings
-  def self.greet
-    'hello user, how can i help you toady, I\'m you daily friend!'
+  attr_accessor :greeting
+
+  def initialize(greeting)
+    @greeting = greeting
+  end
+
+  def greet(greeting)
+    t = Time.new
+    if t.hour.to_i == 00 && t.hour.to_i < 11
+      arr = @greeting.first
+      arr
+    elsif t.hour.to_i >= 11 && t.hour.to_i <= 15
+      'good afternoon user, how can i help you?'
+    else
+      arr = @greeting.last
+      arr
+    end
   end
 end
 
+xdv = []
+greets = Greetings.new(xdv)
+
+puts greets.greet(xdv)

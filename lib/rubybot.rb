@@ -16,7 +16,8 @@ module RubyBot
 
   class Pass_greeting < SlackRubyBot::Commands::Base
     command 'greet' do |client, data, _match|
-      client.say(channel: data.channel, text: Greetings.greet)
+      greets = Greetings.new($greeting_quotes)
+      client.say(channel: data.channel, text: greets.greet($greeting_quotes))
     end
   end
 
