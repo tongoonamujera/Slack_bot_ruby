@@ -3,6 +3,8 @@ module RubyBot
   require_relative './inspirations.rb'
   require_relative './insults.rb'
   require_relative './help.rb'
+  require_relative './quotes.rb'
+  include Quotes
   class App < SlackRubyBot::App
   end
 
@@ -39,18 +41,16 @@ module RubyBot
   end
 
   class Insulting < SlackRubyBot::Commands::Base
-
     command 'insult' do |client, data, _match|
-      client.say(channel: data.channel, text: Insults.insult)
+      insult = Insults.new($insults)
+      client.say(channel: data.channel, text: insult.insult($insults))
     end
-
   end
 
   class Inspiring < SlackRubyBot::Commands::Base
-
     command 'inspire_me' do |client, data, _match|
-      client.say(channel: data.channel, text: Inspiration.inspire)
+      inspiree = Inspiration.new($inspiration_quotes)
+      client.say(channel: data.channel, text: inspiree.inspire($inspiration_quotes))
     end
-
   end
 end
