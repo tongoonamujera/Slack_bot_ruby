@@ -12,6 +12,6 @@ class Inspiration
     ]
 
     arr = inspiration_quotes.shuffle.first.to_s
-    return arr
+      arr
   end
 end

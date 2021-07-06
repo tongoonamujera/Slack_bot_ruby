@@ -14,6 +14,6 @@ class Insults
       'If you look up the definition of moron in the dictionary there will be a picture of you.'
     ]
     arr = insults.shuffle.first.to_s
-    return arr
+      arr
   end
 end
