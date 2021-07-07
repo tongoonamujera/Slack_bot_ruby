@@ -32,7 +32,7 @@ module RubyBot
         screenshot = fetcher_object.fetch width: 1700, height: 850
         imgur_client = Imgur2.new ENV['IMGUR_API']
         url = imgur_client.upload screenshot
-        image_url = url["upload"]["links"]["original"]
+        image_url = url['upload']['links']['original']
         client.message text: image_url, channel: data.channel
       else
         client.message text: _match[:expression] + " " + "isn't a URL", channel: data.channel

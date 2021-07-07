@@ -5,8 +5,7 @@ class Insults
     @insults = insults
   end
 
-  def insult(insults)
-    arr = @insults.sample
-    arr
+  def insult(_insults)
+    @insults.sample
   end
 end
