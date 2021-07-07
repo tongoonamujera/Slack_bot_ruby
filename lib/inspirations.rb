@@ -5,8 +5,7 @@ class Inspiration
     @inspirations = inspirations
   end
 
-  def inspire(inspirations)
-    arr = @inspirations.sample
-    arr
+  def inspire(_inspirations)
+    @inspirations.sample
   end
 end
