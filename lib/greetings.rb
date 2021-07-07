@@ -11,9 +11,9 @@ class Greetings
     @greeting = greeting
   end
 
-  def greet(greeting)
+  def greet(_greeting)
     t = Time.new
-    if t.hour.to_i >=1 && t.hour.to_i < 11
+    if t.hour.to_i >= 1 && t.hour.to_i < 11
       @greeting.first
     elsif t.hour.to_i >= 11 && t.hour.to_i <= 15
       'good afternoon user, how can i help you?'
