@@ -15,7 +15,6 @@ module RubyBot
 
   class PassGreeting < SlackRubyBot::Commands::Base
     command 'greet' do |client, data, _match|
-      include Quotes
       greets = Greetings.new(greeting_quotes)
       client.say(channel: data.channel, text: greets.greet(greeting_quotes))
     end
@@ -42,7 +41,6 @@ module RubyBot
 
   class Insulting < SlackRubyBot::Commands::Base
     command 'insult' do |client, data, _match|
-      include Quotes
       insult = Insults.new(insults)
       client.say(channel: data.channel, text: insult.insult(insults))
     end
@@ -50,7 +48,6 @@ module RubyBot
 
   class Inspiring < SlackRubyBot::Commands::Base
     command 'inspire_me' do |client, data, _match|
-      include Quotes
       inspiree = Inspiration.new(inspiration_quotes)
       client.say(channel: data.channel, text: inspiree.inspire(inspiration_quotes))
     end
