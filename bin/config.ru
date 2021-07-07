@@ -9,6 +9,6 @@ require 'imgur2'
 require 'rss'
 require 'open-uri'
 
-require_relative '../lib/rubybot.rb'
+require_relative '../lib/rubybot'
 
 RubyBot::App.instance.run 

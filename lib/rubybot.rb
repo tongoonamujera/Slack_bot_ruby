@@ -1,9 +1,9 @@
 module RubyBot
-  require_relative './greetings.rb'
-  require_relative './inspirations.rb'
-  require_relative './insults.rb'
-  require_relative './help.rb'
-  require_relative './quotes.rb'
+  require_relative './greetings'
+  require_relative './inspirations'
+  require_relative './insults'
+  require_relative './help'
+  require_relative './quotes'
   include Quotes
   class App < SlackRubyBot::App
   end
