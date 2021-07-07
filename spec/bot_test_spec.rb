@@ -99,3 +99,23 @@ describe '#inspirations' do
     expect(!(inspirate.inspire(array)).is_a?(String)).to eq(false)
   end
 end
+
+describe '#greetings' do
+  array = %w(xzvs)
+  greeting = Greetings.new(array)
+  it 'has a getter and a setter' do
+    expect(greeting.greeting).to eq(array)
+  end
+
+  it 'has a getter and a setter' do
+    expect(!greeting.greeting).not_to eq(array)
+  end
+
+  it 'greet method return a string' do
+    expect((greeting.greet(greeting)).is_a?(String)).to eq(true)
+  end
+
+  it 'greet method return false if an argument is not a string' do
+    expect(!(greeting.greet(greeting)).is_a?(String)).to eq(false)
+  end
+end
