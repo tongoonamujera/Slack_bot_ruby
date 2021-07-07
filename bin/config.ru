@@ -11,4 +11,4 @@ require 'open-uri'
 
 require_relative '../lib/rubybot'
 
-RubyBot::App.instance.run 
+RubyBot::App.instance.run
