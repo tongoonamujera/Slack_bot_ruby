@@ -20,5 +20,5 @@ jobs:
         run: rubocop --color
 AllCops:
   Exclude:
-    - '../bin/rubybot.rb'
-    - '../lib/quotes.rb'
+    - ../bin/rubybot.rb
+    - ../lib/quotes.rb
