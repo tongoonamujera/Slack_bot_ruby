@@ -1,6 +1,6 @@
-require_relative '../lib/greetings.rb'
-require_relative '../lib/inspirations.rb'
-require_relative '../lib/insults.rb'
+require_relative '../lib/greetings'
+require_relative '../lib/inspirations'
+require_relative '../lib/insults'
 
 # describe 'insults' do
 
