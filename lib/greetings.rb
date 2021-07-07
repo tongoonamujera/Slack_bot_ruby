@@ -1,7 +1,6 @@
 class HelloText
-
   def self.say_hello
-    "Hello! This is a Bot!"
+    'Hello! This is a Bot!'
   end
 end
 
@@ -14,14 +13,12 @@ class Greetings
 
   def greet(greeting)
     t = Time.new
-    if t.hour.to_i == 00 && t.hour.to_i < 11
-      arr = @greeting.first
-      arr
+    if t.hour.to_i >=1 && t.hour.to_i < 11
+      @greeting.first
     elsif t.hour.to_i >= 11 && t.hour.to_i <= 15
       'good afternoon user, how can i help you?'
     else
-      arr = @greeting.last
-      arr
+      @greeting.last
     end
   end
 end
