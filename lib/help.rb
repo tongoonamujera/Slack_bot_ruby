@@ -1,4 +1,3 @@
-
 class Bot < SlackRubyBot::Bot
   help do
     title 'FunBot ruby'
