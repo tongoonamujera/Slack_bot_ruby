@@ -61,7 +61,7 @@ require_relative '../lib/insults.rb'
 # end
 
 describe '#insults' do
-  array = ['x', 'z', 'v', 's']
+  array = %w[xzvs]
   insults = Insults.new(array)
   it 'has a getter and a setter' do
     expect(insults.insults).to eq(array)
@@ -81,7 +81,7 @@ describe '#insults' do
 end
 
 describe '#inspirations' do
-  array = ['x', 'z', 'v', 's']
+  array = %w[xzvs]
   inspirate = Inspiration.new(array)
   it 'has a getter and a setter' do
     expect(inspirate.inspirations).to eq(array)
@@ -101,7 +101,7 @@ describe '#inspirations' do
 end
 
 describe '#greetings' do
-  array = ['x', 'z', 'v', 's']
+  array = %w[xzvs]
   greeting = Greetings.new(array)
   it 'has a getter and a setter' do
     expect(greeting.greeting).to eq(array)
