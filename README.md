@@ -117,7 +117,7 @@
         ```ruby
         class HelloText
           def self.say_hello
-            'Hello! This is a Bot!'
+            'Hie this is a bot built by Tongoona Mujera'
           end
         end
 
@@ -129,6 +129,11 @@
           end
 
           def greet(_greeting)
+            greet_help
+          end
+
+          private
+          def greet_help
             t = Time.new
             if t.hour.to_i >= 1 && t.hour.to_i < 11
               @greeting.first
@@ -150,6 +155,11 @@
         end
 
         def inspire(_inspirations)
+          inspire_priv
+        end
+
+        private
+        def inspire_priv
           @inspirations.sample
         end
       end
@@ -164,6 +174,11 @@
         end
 
         def insult(_insults)
+          insult_priv
+        end
+
+        private
+        def insult_priv
           @insults.sample
         end
       end
