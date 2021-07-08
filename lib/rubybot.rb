@@ -62,9 +62,9 @@ module RubyBot
 
   class Inspiring < SlackRubyBot::Commands::Base
     command 'inspire_me' do |client, data, _match|
-      # rubocop:disable Metrics/LineLength
+      # rubocop:disable Layout/LineLength
       inspiration_quotes = ['Experience is the name everyone gives to their mistakes.', 'When to use iterative development? You should use iterative development on projects that you want to succeed.', 'Code is like humor. When you have to explain it. its bad.', 'Fix the cause not the symptom.', 'Make it work make it right make it fast.', 'Simplicity is the soul of efficiency.', 'Sometimes it pays to stay in bed on Monday rather than spending the rest of the week debugging Monday code.', 'Write it. Shoot it. Publish it. Crochet it saute it whatever. MAKE.']
-      # rubocop:enable Metrics/LineLength
+      # rubocop:enable Layout/LineLength
       inspiree = Inspiration.new(inspiration_quotes)
       client.say(channel: data.channel, text: inspiree.inspire(inspiration_quotes))
     end
