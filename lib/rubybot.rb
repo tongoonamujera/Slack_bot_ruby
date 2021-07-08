@@ -14,10 +14,7 @@ module RubyBot
 
   class PassGreeting < SlackRubyBot::Commands::Base
     command 'greet' do |client, data, _match|
-      greeting_quotes = %w[
-        good morning user! how can i help you?
-        good evening user! how can i help you
-      ]
+      greeting_quotes = ['good morning user! how can i help you?', 'good evening user! how can i help you']
       greets = Greetings.new(greeting_quotes)
       client.say(channel: data.channel, text: greets.greet(greeting_quotes))
     end
@@ -42,19 +39,9 @@ module RubyBot
 
   class Insulting < SlackRubyBot::Commands::Base
     command 'insult' do |client, data, _match|
-      insults = %w[
-        My battery lasts longer than your relationships.
-        Im surprised at your level of stupidity.
-        Life is good you should get one.
-        Please don’t interupt me when Im ignoring you.
-        You are known as an idiot savant minus the savant.
-        I never insult any people I only tell them what they are.
-        Did you forget your brain in your mothers womb? Cause I’m pretty sure you did.
-        The degree of your stupidity is enough to boil water.
-        Of course I talk like an idiot. How else could you understand me?
-        I respect those who hate me by showing my middle finger.
-        If you look up the definition of moron in the dictionary there will be a picture of you.
-      ]
+      # rubocop:disable Layout/LineLength
+      insults = ['My battery lasts longer than your relationships.', 'Im surprised at your level of stupidity.', 'Life is good you should get one.', 'Please don’t interupt me when Im ignoring you.', 'You are known as an idiot savant minus the savant.', 'I never insult any people I only tell them what they are.', 'Did you forget your brain in your mothers womb? Cause I’m pretty sure you did.', 'The degree of your stupidity is enough to boil water.', 'Of course I talk like an idiot. How else could you understand me?', 'I respect those who hate me by showing my middle finger.', 'If you look up the definition of moron in the dictionary there will be a picture of you.']
+      # rubocop:enable Layout/LineLength
       insult = Insults.new(insults)
       client.say(channel: data.channel, text: insult.insult(insults))
     end
