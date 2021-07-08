@@ -65,7 +65,7 @@ module RubyBot
     command 'inspire_me' do |client, data, _match|
       inspiration_quotes = %w[
         Experience is the name everyone gives to their mistakes.
-        When to use iterative development? You should use iterative development only on projects that you want to succeed.
+        When to use iterative development? You should use iterative development on projects that you want to succeed.
         Code is like humor. When you have to explain it, its bad.
         Fix the cause, not the symptom.
         Make it work make it right  make it fast.
