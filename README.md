@@ -69,10 +69,7 @@
 
         class PassGreeting < SlackRubyBot::Commands::Base
           command 'greet' do |client, data, _match|
-            greeting_quotes = %w[
-              good morning user! how can i help you?
-              good evening user! how can i help you
-            ]
+            greeting_quotes = ['good morning user! how can i help you?', 'good evening user! how can i help you']
             greets = Greetings.new(greeting_quotes)
             client.say(channel: data.channel, text: greets.greet(greeting_quotes))
           end
@@ -97,19 +94,9 @@
 
         class Insulting < SlackRubyBot::Commands::Base
           command 'insult' do |client, data, _match|
-            insults = %w[
-              My battery lasts longer than your relationships.
-              Im surprised at your level of stupidity.
-              Life is good you should get one.
-              Please don’t interupt me when Im ignoring you.
-              You are known as an idiot savant minus the savant.
-              I never insult any people I only tell them what they are.
-              Did you forget your brain in your mothers womb? Cause I’m pretty sure you did.
-              The degree of your stupidity is enough to boil water.
-              Of course I talk like an idiot. How else could you understand me?
-              I respect those who hate me by showing my middle finger.
-              If you look up the definition of moron in the dictionary there will be a picture of you.
-            ]
+            # rubocop:disable Layout/LineLength
+            insults = ['My battery lasts longer than your relationships.', 'Im surprised at your level of stupidity.', 'Life is good you should get one.', 'Please don’t interupt me when Im ignoring you.', 'You are known as an idiot savant minus the savant.', 'I never insult any people I only tell them what they are.', 'Did you forget your brain in your mothers womb? Cause I’m pretty sure you did.', 'The degree of your stupidity is enough to boil water.', 'Of course I talk like an idiot. How else could you understand me?', 'I respect those who hate me by showing my middle finger.', 'If you look up the definition of moron in the dictionary there will be a picture of you.']
+            # rubocop:enable Layout/LineLength
             insult = Insults.new(insults)
             client.say(channel: data.channel, text: insult.insult(insults))
           end
@@ -117,16 +104,9 @@
 
         class Inspiring < SlackRubyBot::Commands::Base
           command 'inspire_me' do |client, data, _match|
-            inspiration_quotes = %w[
-              Experience is the name everyone gives to their mistakes.
-              When to use iterative development? You should use iterative development on projects that you want to succeed.
-              Code is like humor. When you have to explain it. its bad.
-              Fix the cause not the symptom.
-              Make it work make it right make it fast.
-              Simplicity is the soul of efficiency.
-              Sometimes it pays to stay in bed on Monday rather than spending the rest of the week debugging Monday code.
-              Write it. Shoot it. Publish it. Crochet it saute it whatever. MAKE.
-            ]
+            # rubocop:disable Layout/LineLength
+            inspiration_quotes = ['Experience is the name everyone gives to their mistakes.', 'When to use iterative development? You should use iterative development on projects that you want to succeed.', 'Code is like humor. When you have to explain it. its bad.', 'Fix the cause not the symptom.', 'Make it work make it right make it fast.', 'Simplicity is the soul of efficiency.', 'Sometimes it pays to stay in bed on Monday rather than spending the rest of the week debugging Monday code.', 'Write it. Shoot it. Publish it. Crochet it saute it whatever. MAKE.']
+            # rubocop:enable Layout/LineLength
             inspiree = Inspiration.new(inspiration_quotes)
             client.say(channel: data.channel, text: inspiree.inspire(inspiration_quotes))
           end
@@ -136,57 +116,55 @@
       - 2. `greetings.rb` **which contains the following code**
         ```ruby
         class HelloText
-
           def self.say_hello
-            "Hello! This is a Bot!"
+            'Hello! This is a Bot!'
           end
         end
 
         class Greetings
-          def self.greet
-            'hello user, how can i help you toady, I\'m you daily friend!'
+          attr_accessor :greeting
+
+          def initialize(greeting)
+            @greeting = greeting
+          end
+
+          def greet(_greeting)
+            t = Time.new
+            if t.hour.to_i >= 1 && t.hour.to_i < 11
+              @greeting.first
+            elsif t.hour.to_i >= 11 && t.hour.to_i <= 15
+              'good afternoon user, how can i help you?'
+            else
+              @greeting.last
+            end
           end
         end
         ```
       - 3. `inspirations.rb` **Which contains the following code**
       ```ruby
       class Inspiration
-        def self.inspire
-          inspiration_quotes = [
-            'Experience is the name everyone gives to their mistakes.',
-            'When to use iterative development? You should use iterative development only on projects that you want to succeed.',
-            'Code is like humor. When you have to explain it, it’s bad.',
-            'Fix the cause, not the symptom.',
-            'Make it work, make it right, make it fast.',
-            'Simplicity is the soul of efficiency.',
-            'Sometimes it pays to stay in bed on Monday, rather than spending the rest of the week debugging Monday’s code.',
-            'Write it. Shoot it. Publish it. Crochet it, sauté it, whatever. MAKE.'
-          ]
+        attr_accessor :inspirations
 
-          arr = inspiration_quotes.shuffle.first.to_s
-          return arr
+        def initialize(inspirations)
+          @inspirations = inspirations
+        end
+
+        def inspire(_inspirations)
+          @inspirations.sample
         end
       end
       ```
       - 4. `insults.rb` **which contains the following code**
       ```ruby
       class Insults
-        def self.insult
-          insults = [
-            'My battery lasts longer than your relationships.',
-            'I’m surprised at your level of stupidity.',
-            'Life is good, you should get one.',
-            'Please don’t interupt me when I’m ignoring you.',
-            'You are known as an idiot savant, minus the savant.',
-            'I never insult any people I only tell them what they are.',
-            'Did you forget your brain in your mother’s womb? Cause I’m pretty sure you did.',
-            'The degree of your stupidity is enough to boil water.',
-            'Of course I talk like an idiot. How else could you understand me?',
-            'I respect those, who hate me by showing my middle finger.',
-            'If you look up the definition of moron in the dictionary there will be a picture of you.'
-          ]
-          arr = insults.shuffle.first.to_s
-          return arr
+        attr_accessor :insults
+
+        def initialize(insults)
+          @insults = insults
+        end
+
+        def insult(_insults)
+          @insults.sample
         end
       end
       ```
