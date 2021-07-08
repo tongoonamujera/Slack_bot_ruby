@@ -25,7 +25,6 @@ module RubyBot
 
   class Screenshot < SlackRubyBot::Commands::Base
     command 'screenshot' do |client, data, match|
-      
       url = URI(match[:expression].match(/\<(.*)\>/)[1]) rescue nil
 
       if url
@@ -68,7 +67,7 @@ module RubyBot
         When to use iterative development? You should use iterative development on projects that you want to succeed.
         Code is like humor. When you have to explain it. its bad.
         Fix the cause not the symptom.
-        Make it work make it right  make it fast.
+        Make it work make it right make it fast.
         Simplicity is the soul of efficiency.
         Sometimes it pays to stay in bed on Monday rather than spending the rest of the week debugging Monday code.
         Write it. Shoot it. Publish it. Crochet it saute it, whatever. MAKE.
