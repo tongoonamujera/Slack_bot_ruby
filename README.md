@@ -196,14 +196,18 @@
    ```
 
    - To get a local copy up and running, follow these simple example steps.
-    - 1. Open a terminal window and enter `git clone https://github.com/tongoonamujera/Slack_bot_ruby.git`
-    - 2. Make your new cloned directory your active directory
-    - 3. Currently, you are in the "development branch."
+    - Open a terminal window and enter `git clone https://github.com/tongoonamujera/Slack_bot_ruby.git`
+    - Make your new cloned directory your active directory by typing `cd Slack_bot_ruby`
+    - Currently, you are in the "development branch."
+    - Enter `git checkout feature` to navigate to feature branch
+    - Remember to run `bundle` to install gems to your cloned project
+
+
 
 ### Usage
  - Create a new slack bot ([you can use this link to create a slack bot](https://slack.com/services/new/bot))
  - You can choose a name of your choice and then click the green button (Add Bot Intergration)
- - You can be redirected to a new page remember to copy your SLACK_API_TOKEN and paste it to your `.env` file.
+ - You can be redirected to a new page remember to copy your SLACK_API_TOKEN and paste it to your `.env` file in the bin folder.
  - Now you can click the green button to Save Bot Intergration
  - Navigate to your slack workspace and invite your_bot to any channel of your choice
  - To test your code make sure you are i the directory containing `config.ru` file
