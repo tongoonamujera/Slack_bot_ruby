@@ -16,6 +16,7 @@ class Greetings
   end
 
   private
+
   def greet_help
     t = Time.new
     if t.hour.to_i >= 1 && t.hour.to_i < 11

@@ -10,6 +10,7 @@ class Insults
   end
 
   private
+
   def insult_priv
     @insults.sample
   end
