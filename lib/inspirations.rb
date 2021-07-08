@@ -6,6 +6,11 @@ class Inspiration
   end
 
   def inspire(_inspirations)
+    inspire_priv
+  end
+
+  private
+  def inspire_priv
     @inspirations.sample
   end
 end

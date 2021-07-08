@@ -1,6 +1,6 @@
 class HelloText
   def self.say_hello
-    'Hello! This is a Bot!'
+    'Hie this is a bot built by Tongoona Mujera'
   end
 end
 
@@ -12,6 +12,11 @@ class Greetings
   end
 
   def greet(_greeting)
+    greet_help
+  end
+
+  private
+  def greet_help
     t = Time.new
     if t.hour.to_i >= 1 && t.hour.to_i < 11
       @greeting.first
