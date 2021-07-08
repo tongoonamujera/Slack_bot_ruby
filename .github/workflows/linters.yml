@@ -19,5 +19,5 @@ jobs:
       - name: Rubocop Report
         run: rubocop --color
         Layout/LineLength:
-          Max: 80
+          Max: 2000
           IgnoredPatterns: ['\A#']
