@@ -70,7 +70,7 @@ module RubyBot
         Make it work make it right make it fast.
         Simplicity is the soul of efficiency.
         Sometimes it pays to stay in bed on Monday rather than spending the rest of the week debugging Monday code.
-        Write it. Shoot it. Publish it. Crochet it saute it, whatever. MAKE.
+        Write it. Shoot it. Publish it. Crochet it saute it whatever. MAKE.
       ]
       inspiree = Inspiration.new(inspiration_quotes)
       client.say(channel: data.channel, text: inspiree.inspire(inspiration_quotes))
