@@ -66,8 +66,8 @@ module RubyBot
       inspiration_quotes = %w[
         Experience is the name everyone gives to their mistakes.
         When to use iterative development? You should use iterative development on projects that you want to succeed.
-        Code is like humor. When you have to explain it, its bad.
-        Fix the cause, not the symptom.
+        Code is like humor. When you have to explain it. its bad.
+        Fix the cause not the symptom.
         Make it work make it right  make it fast.
         Simplicity is the soul of efficiency.
         Sometimes it pays to stay in bed on Monday rather than spending the rest of the week debugging Monday code.
