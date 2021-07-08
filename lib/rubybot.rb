@@ -25,7 +25,7 @@ module RubyBot
 
   class Screenshot < SlackRubyBot::Commands::Base
     command 'screenshot' do |client, data, match|
-      url = URI(match[:expression].match(/\<(.*)\>/)[1]) rescue nil
+      url = URI(match[:expression].match(/<(.*)/)[1]) #rescue nil
 
       if url
         fetcher_object = Screencap::Fetcher.new(url.to_s)
