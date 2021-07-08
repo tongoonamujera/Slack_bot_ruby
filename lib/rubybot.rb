@@ -14,7 +14,10 @@ module RubyBot
 
   class PassGreeting < SlackRubyBot::Commands::Base
     command 'greet' do |client, data, _match|
-      greeting_quotes = ['good morning user!, how can i help you?', 'good evening user, how can i help you']
+      greeting_quotes = %w[
+        good morning user!, how can i help you?
+        good evening user, how can i help you
+      ]
       greets = Greetings.new(greeting_quotes)
       client.say(channel: data.channel, text: greets.greet(greeting_quotes))
     end
@@ -40,7 +43,19 @@ module RubyBot
 
   class Insulting < SlackRubyBot::Commands::Base
     command 'insult' do |client, data, _match|
-      insults = ['My battery lasts longer than your relationships.', 'I’m surprised at your level of stupidity.', 'Life is good, you should get one.', 'Please don’t interupt me when I’m ignoring you.', 'You are known as an idiot savant, minus the savant.', 'I never insult any people I only tell them what they are.', 'Did you forget your brain in your mother’s womb? Cause I’m pretty sure you did.', 'The degree of your stupidity is enough to boil water.', 'Of course I talk like an idiot. How else could you understand me?', 'I respect those, who hate me by showing my middle finger.', 'If you look up the definition of moron in the dictionary there will be a picture of you.']
+      insults = %w[
+        My battery lasts longer than your relationships.
+        I’m surprised at your level of stupidity.
+        Life is good, you should get one.
+        Please don’t interupt me when I’m ignoring you.
+        You are known as an idiot savant, minus the savant.
+        I never insult any people I only tell them what they are.
+        Did you forget your brain in your mother’s womb? Cause I’m pretty sure you did.
+        The degree of your stupidity is enough to boil water.
+        Of course I talk like an idiot. How else could you understand me?
+        I respect those, who hate me by showing my middle finger.
+        If you look up the definition of moron in the dictionary there will be a picture of you.
+      ]
       insult = Insults.new(insults)
       client.say(channel: data.channel, text: insult.insult(insults))
     end
@@ -48,7 +63,16 @@ module RubyBot
 
   class Inspiring < SlackRubyBot::Commands::Base
     command 'inspire_me' do |client, data, _match|
-      inspiration_quotes = ['Experience is the name everyone gives to their mistakes.', 'When to use iterative development? You should use iterative development only on projects that you want to succeed.', 'Code is like humor. When you have to explain it, it’s bad.', 'Fix the cause, not the symptom.', 'Make it work, make it right, make it fast.', 'Simplicity is the soul of efficiency.', 'Sometimes it pays to stay in bed on Monday, rather than spending the rest of the week debugging Monday’s code.', 'Write it. Shoot it. Publish it. Crochet it, sauté it, whatever. MAKE.']
+      inspiration_quotes = %W[
+        Experience is the name everyone gives to their mistakes.
+        When to use iterative development? You should use iterative development only on projects that you want to succeed.
+        Code is like humor. When you have to explain it, it’s bad.
+        Fix the cause, not the symptom.
+        Make it work, make it right, make it fast.
+        Simplicity is the soul of efficiency.
+        Sometimes it pays to stay in bed on Monday, rather than spending the rest of the week debugging Monday’s code.
+        Write it. Shoot it. Publish it. Crochet it, sauté it, whatever. MAKE.
+      ]
       inspiree = Inspiration.new(inspiration_quotes)
       client.say(channel: data.channel, text: inspiree.inspire(inspiration_quotes))
     end
