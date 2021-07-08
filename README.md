@@ -196,11 +196,11 @@
    ```
 
    - To get a local copy up and running, follow these simple example steps.
-    - Open a terminal window and enter `git clone https://github.com/tongoonamujera/Slack_bot_ruby.git`
-    - Make your new cloned directory your active directory by typing `cd Slack_bot_ruby`
-    - Currently, you are in the "development branch."
-    - Enter `git checkout feature` to navigate to feature branch
-    - Remember to run `bundle` to install gems to your cloned project
+   - Open a terminal window and enter `git clone https://github.com/tongoonamujera/Slack_bot_ruby.git`
+   - Make your new cloned directory your active directory by typing `cd Slack_bot_ruby`
+   - Currently, you are in the "development branch."
+   - Enter `git checkout feature` to navigate to feature branch
+   - Remember to run `bundle` to install gems to your cloned project
 
 
 
