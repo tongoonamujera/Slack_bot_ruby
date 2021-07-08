@@ -15,8 +15,8 @@ module RubyBot
   class PassGreeting < SlackRubyBot::Commands::Base
     command 'greet' do |client, data, _match|
       greeting_quotes = %w[
-        good morning user!, how can i help you?
-        good evening user, how can i help you
+        good morning user! how can i help you?
+        good evening user! how can i help you
       ]
       greets = Greetings.new(greeting_quotes)
       client.say(channel: data.channel, text: greets.greet(greeting_quotes))
@@ -45,15 +45,15 @@ module RubyBot
     command 'insult' do |client, data, _match|
       insults = %w[
         My battery lasts longer than your relationships.
-        I’m surprised at your level of stupidity.
-        Life is good, you should get one.
-        Please don’t interupt me when I’m ignoring you.
-        You are known as an idiot savant, minus the savant.
+        Im surprised at your level of stupidity.
+        Life is good you should get one.
+        Please don’t interupt me when Im ignoring you.
+        You are known as an idiot savant minus the savant.
         I never insult any people I only tell them what they are.
-        Did you forget your brain in your mother’s womb? Cause I’m pretty sure you did.
+        Did you forget your brain in your mothers womb? Cause I’m pretty sure you did.
         The degree of your stupidity is enough to boil water.
         Of course I talk like an idiot. How else could you understand me?
-        I respect those, who hate me by showing my middle finger.
+        I respect those who hate me by showing my middle finger.
         If you look up the definition of moron in the dictionary there will be a picture of you.
       ]
       insult = Insults.new(insults)
@@ -63,15 +63,15 @@ module RubyBot
 
   class Inspiring < SlackRubyBot::Commands::Base
     command 'inspire_me' do |client, data, _match|
-      inspiration_quotes = %W[
+      inspiration_quotes = %w[
         Experience is the name everyone gives to their mistakes.
         When to use iterative development? You should use iterative development only on projects that you want to succeed.
         Code is like humor. When you have to explain it, it’s bad.
         Fix the cause, not the symptom.
-        Make it work, make it right, make it fast.
+        Make it work make it right  make it fast.
         Simplicity is the soul of efficiency.
-        Sometimes it pays to stay in bed on Monday, rather than spending the rest of the week debugging Monday’s code.
-        Write it. Shoot it. Publish it. Crochet it, sauté it, whatever. MAKE.
+        Sometimes it pays to stay in bed on Monday rather than spending the rest of the week debugging Monday code.
+        Write it. Shoot it. Publish it. Crochet it saute it, whatever. MAKE.
       ]
       inspiree = Inspiration.new(inspiration_quotes)
       client.say(channel: data.channel, text: inspiree.inspire(inspiration_quotes))
