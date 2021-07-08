@@ -33,8 +33,7 @@ module RubyBot
         image_url = url['upload']['links']['original']
         client.message text: image_url, channel: data.channel
       else
-        client.message text: _match[:expression] + " isn't a URL", channel: data.channel
-
+        client.message text: "#{_match[:expression]}  isn't a URL", channel: data.channel
       end
     end
   end
