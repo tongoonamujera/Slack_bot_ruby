@@ -6,7 +6,7 @@
 - Ruby
 
 ## Getting Started
- - *if you don't want to start from scratch jump to clone section
+ - *if you don't want to start from scratch jump to clone section*
  - ### Prerequisites 
     - make sure you have Ruby installed locally
     - make sure you have a code edditor.
@@ -46,7 +46,7 @@
        require 'rss'
        require 'open-uri'
 
-       require_relative '../lib/commands.rb'
+       require_relative '../lib/rubybot'
 
        RubyBot::App.instance.run
        ```
